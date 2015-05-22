@@ -8,20 +8,6 @@ This project allows you to control LIRC from any web browser - phone, tablet, or
 This is part of the [Open Source Universal Remote](http://opensourceuniversalremote.com) project.
 
 
-## Installation
-
-You'll need to have [LIRC](http://lirc.org) installed and configured on your machine to use ``lirc_web``. In addition, you'll need to install [nodejs](http://nodejs.org). Once you have LIRC and nodejs installed and configured, you'll be able to install ``lirc_web`` and it's dependencies:
-
-    git clone git://github.com/alexbain/lirc_web.git
-    cd lirc_web
-    npm install
-    node app.js
-
-You're set! Verify the web interface works by opening ``http://SERVER:3000/`` in a web browser.
-
-If you want to have the app available via port 80 and start on boot, there are example NGINX and Upstart configuration files included in the ``example_configs/`` directory.
-
-
 ## Configuration
 
 As of v0.0.8, ``lirc_web`` supports customization through a configuration file (``config.json``) in the root of the project. There are currently four configuration options:
@@ -112,34 +98,7 @@ You can run the test suite by running:
 make test
 ```
 
-## Contributing
-
-Before you submit a pull request with your change, please be sure to:
-
-* Add new tests that prove your change works as expected.
-* Ensure all existing tests are still passing.
-
-Once you're sure everything is still working, open a pull request with a clear
-description of what you changed and why. I will not accept a pull request which
-breaks existing tests or adds new functionality without tests.
-
-The exception to this would be refactoring existing code or changing documentation.
-
 
 ## License
 
 (The MIT License)
-
-Copyright (c) 2013 Alex Bain &lt;alex@alexba.in&gt;
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
